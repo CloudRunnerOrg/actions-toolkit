@@ -1,0 +1,17 @@
+---
+framework: jest
+blocklist:
+  - "./tests/exit.test.ts"
+preRun:
+  command:
+    - npm ci
+preMerge:
+  pattern:
+    - "./tests/*.test.{js,ts}"
+postMerge: 
+  pattern: 
+    - "./tests/*.test.{js,ts}"
+postRun:
+  command:
+    - node --version
+version: 1.0
