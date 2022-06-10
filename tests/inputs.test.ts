@@ -37,12 +37,14 @@ describe('createInputProxy', () => {
       inputs = createInputProxy<{ 'example-name': string }>()
       const result = inputs['example-name']
       expect(result).toBe('pizza')
+      
     })
   })
 
   describe('#set', () => {
     it('does not allow properties to be set', () => {
       expect(() => inputs.test = 'test').toThrowError()
+      
     })
   })
 
@@ -50,6 +52,7 @@ describe('createInputProxy', () => {
     it('returns the filtered keys', () => {
       const keys = Object.keys(inputs)
       expect(keys).toEqual(['INPUT_EXAMPLE-NAME', 'INPUT_EXAMPLE', 'INPUT_FOO'])
+
     })
   })
 })
