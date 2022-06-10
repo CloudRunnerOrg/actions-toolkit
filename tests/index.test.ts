@@ -22,6 +22,7 @@ describe('Toolkit', () => {
       const actual = await Toolkit.run(spy, { logger: new Signale({ disabled: true }) })
       // Test that the function was called
       expect(spy).toHaveBeenCalled()
+      
       // Make sure it was called with a Toolkit instance
       expect((spy.mock.calls as any)[0][0]).toBeInstanceOf(Toolkit)
       // Check that it returned a value as an async function
