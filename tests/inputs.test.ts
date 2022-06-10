@@ -37,6 +37,7 @@ describe('createInputProxy', () => {
       inputs = createInputProxy<{ 'example-name': string }>()
       const result = inputs['example-name']
       expect(result).toBe('pizza')
+      
     })
   })
 
