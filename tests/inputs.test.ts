@@ -44,6 +44,7 @@ describe('createInputProxy', () => {
   describe('#set', () => {
     it('does not allow properties to be set', () => {
       expect(() => inputs.test = 'test').toThrowError()
+      
     })
   })
 
