@@ -52,6 +52,7 @@ describe('createInputProxy', () => {
     it('returns the filtered keys', () => {
       const keys = Object.keys(inputs)
       expect(keys).toEqual(['INPUT_EXAMPLE-NAME', 'INPUT_EXAMPLE', 'INPUT_FOO'])
+
     })
   })
 })
