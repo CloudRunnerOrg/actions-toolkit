@@ -21,6 +21,11 @@ describe('createInputProxy', () => {
       const result = inputs.example
       expect(result).toBe('pizza')
     })
+
+    it('returns the expected valuee', () => {
+      const result = inputs.example
+      expect(result).toBe('pizza')
+    })
   
     it('accepts the correct types', () => {
       inputs = createInputProxy<{ example: string }>()
