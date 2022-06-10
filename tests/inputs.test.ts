@@ -17,7 +17,7 @@ describe('createInputProxy', () => {
   })
 
   describe('#get', () => {
-    it('returns the expected value', () => {
+    it('returns the expected valueee', () => {
       const result = inputs.example
       expect(result).toBe('pizza')
     })
